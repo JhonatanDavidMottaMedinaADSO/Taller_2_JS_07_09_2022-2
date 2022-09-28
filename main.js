@@ -1,20 +1,17 @@
-addEventListener("DOMContentLoaded", ()=>{
-    // 1. Escribir un programa que sume, reste, multiplique y divida dos números
-    
-    // • Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un depósito.
-    // • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
-    // • Volumen = PI *(radio^2)* H (altura del depósito)
-    // • El tiempo se encuentra en minutos.
-    // • Normalmente se mide el volumen en litros y el tiempo en segundos.
+addEventListener("DOMContentLoaded", () => {
 
-    alert('Escriba los datos para calcular el tiempo estimado de llenado de un deposito')
-    let t = Number(prompt(`Ingrese el tiempo en min`))
-    let r = Number(prompt(`Ingrese el radio del deposito`))
-    let h = Number(prompt(`Ingrese la altura del deposito en cm`))
+    // 24. Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por
+    // $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le
+    // sobran $91000. ¿cuánto dinero tenía?
 
-    let seg = t * 60
-    let volumen = Math.PI * (Math.pow(r,2)) * h
-    let caudal = volumen/seg
+    alert('Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le sobran $91000. ¿cuánto dinero tenía?')
 
-    console.log(`%cEl caudal del posito es: ${caudal}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
+    let bomba = 1168000
+    let cajaPerno = 87000
+    let llave = 11500
+    let juegosLlave = 5 * llave
+    let conjuntoPerno = 3 * cajaPerno
+    let total = juegosLlave + conjuntoPerno + bomba + 91000
+
+    console.log(`%cEl dinero que llevaba el obrero es: ${total}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
 })
