@@ -1,18 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-    // 27. tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma
-    // 2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a
-    // Lorena?
+   // Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que
+    // se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando
+    // presupuestos para cada cliente.
 
-    let tapas = Number(prompt(`Ingresa el numero de tapas reunidas: `))
+    let m2 = Number(prompt(`Metros cuadrados por pintar`))
+    let precioM2 = Number(prompt(`Precio de metro cuadrado`))
     
-    let martin = tapas * 2/3
-    let jairo = tapas * 1/4
-    let lorena = tapas - martin - jairo
-    let lorena2 = lorena.toFixed(2)
-    let porc = (lorena * 100) / tapas
-    let porc2 = porc.toFixed(2)
-    console.log(`%cA lorena le corresponden ${lorena2} tapas`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
-    console.log(`%cEl porcentaje que le corresponde es ${porc2}%`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
+    let precioTotal = m2 * precioM2
+
+    console.log(`%cEl precio total es ${precioTotal}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
    
 })
