@@ -1,14 +1,17 @@
 addEventListener("DOMContentLoaded", ()=>{
     
-   // Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que
-    // se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando
-    // presupuestos para cada cliente.
+    // Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,
+    // pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realice el código
+//     // que representen el algoritmo para solucionar este problema.
+//     añon=int(input("Ingrese el año de nacimiento: "))
+//     añoa=int(input("Ingrese el año actual: "))
+//     edad=añoa-añon
+//     print("La edad es", edad)
 
-    let m2 = Number(prompt(`Metros cuadrados por pintar`))
-    let precioM2 = Number(prompt(`Precio de metro cuadrado`))
-    
-    let precioTotal = m2 * precioM2
+    let añoNa = Number(prompt(`Ingrese su año de nacimiento`))
+    let añoAct = Number(prompt(`Ingrese el año actual`))
 
-    console.log(`%cEl precio total es ${precioTotal}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
-   
+    let edad = añoAct - añoNa
+
+    console.log(`%cLa edad es ${edad}`, `background-color: yellow; border-radius: 2px; border: 4px groove orange; color: black;`)
 })
